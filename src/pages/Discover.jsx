@@ -1,9 +1,10 @@
+/* eslint-disable quotes */
 import { Error, Loader, SongCard } from "../components";
 import { genres } from "../assets/constants";
-import { useGetTopChartsQuery } from '../redux/services/shazamCore';
+import { useGetTopChartsQuery } from "../redux/services/shazamCore";
 
 const Discover = () => {
-  const { data, isFetching, error} = useGetTopChartsQuery();
+  const { data, isFetching, error } = useGetTopChartsQuery();
   const genreTitle = "Pop";
 
   if (isFetching) return <Loader title="Loading Songs..." />;
@@ -19,13 +20,11 @@ const Discover = () => {
           value=""
           className="bg-black text-gray-300 text-sm p-3 rounded-lg outline-none mt-5 sm:mt-0"
         >
-          {genres.map((genre) => {
-            return (
-              <option key={genre.value} value={genre.value}>
-                {genre.title}
-              </option>
-            );
-          })}
+          {genres.map((genre) => (
+            <option key={genre.value} value={genre.value}>
+              {genre.title}
+            </option>
+           ))}
         </select>
       </div>
       <div className="flex flex-wrap sm:justify-start justify-center gap-8">
