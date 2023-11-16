@@ -18,14 +18,14 @@ const Discover = () => {
   const genreTitle = genres.find(({ value })=> value  === genreListId)?.title
   return (
     <div className="flex flex-col">
-      <div className=" flex w-full justify-between items-center sm:flex-row flex-col mt-4 mb-10">
-        <h2 className="font-bold text-3xl text-white text-left">
+      <div className=" flex justify-between items-center sm:flex-row flex-col mt-4 mb-10">
+        <h2 className="font-bold text-3xl text-white text-left pl-3">
           Discover {genreTitle}
         </h2>
         <select
           onChange={(e) => {dispatch(selectGenreListId(e.target.value))}}
           value={genreListId||"Pop"}
-          className="bg-black text-gray-300 text-sm p-3 rounded-lg outline-none mt-5 sm:mt-0"
+          className="bg-black text-gray-300 text-md p-3 rounded-lg outline-none mt-5 sm:mt- mr-24"
         >
           {genres.map((genre) => (
             <option key={genre.value} value={genre.value}>
