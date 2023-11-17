@@ -9,7 +9,7 @@ import { useGetSongsByGenreQuery } from "../redux/services/shazamCore";
 const Discover = () => {
   const dispatch = useDispatch();
   const { activeSong, isPlaying, genreListId} = useSelector((state)=> state.player);
-  const { data, isFetching, error } = useGetSongsByGenreQuery(genreListId || 'POP ');
+  const { data, isFetching, error } = useGetSongsByGenreQuery(genreListId || 'POP');
   
 
   if (isFetching) return <Loader title="Loading Songs..." />;
@@ -38,7 +38,7 @@ const Discover = () => {
         {data?.map((song, i) => (
           <SongCard 
             key={song.key} 
-            song={song} 
+            song={song}
             i={i}
             isPlaying={isPlaying}
             activeSong={activeSong}

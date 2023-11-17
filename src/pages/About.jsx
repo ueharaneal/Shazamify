@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { systemDesign,ShazamifyPDF } from "../assets";
 
 function About() {
   return (
@@ -10,15 +11,16 @@ function About() {
       <h2 className="font-bold text-2xl text-gray-400 text-left mt-4 mb-4">
         Design Phase:
       </h2>
-      <div className="hover:scale-105 flex-col flex transform cursor-pointer">
+      <div className="flex-col flex">
         <a
-          href="YOUR_LINK_HERE"
-          className="flex ml-6 items-center p-1 text-center font-bold text-blue-400"
+          href={ShazamifyPDF}
+          download={ShazamifyPDF}
+          className="flex ml-6 items-center p-1 text-center font-bold text-blue-400 cursor-pointer transition hover:scale-105 duration-200"
         >
-          Click here to view full diagram
+          Click here to download full diagram PDF
           <FaArrowRight className="h-8 pl-1" />
         </a>
-        <img className="ml-6" src="../assets"/>
+        <img className="mx-8 mr-12" src={systemDesign}/>
       </div>
       <h2 className="font-bold text-2xl text-gray-400 text-left mt-4 mb-8">
         Key Features:
@@ -26,7 +28,7 @@ function About() {
       <div className="flex flex-col text-white ml-6">
         <h1 className="font-bold text-xl pb-5">Overview:</h1>
         <p className="pb-12">
-          vSpotify Clone is a cutting-edge music streaming web application that
+          Shazamify is a cutting-edge music streaming web application that
           offers a unique and interactive experience for music lovers. This web
           app stands out with its third-party backend integration, extensive API
           library, and visually appealing user interface.
