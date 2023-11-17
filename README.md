@@ -3,9 +3,12 @@
 # Live Website
 
 
-Welcome to the GitHub repository for Shazamify, a Spotify Clone that leverages a rich set of APIs to deliver a seamless and engaging music discovery experience. This project showcases the integration of various technologies to create an intuitive and responsive music streaming web application.
+Welcome to the GitHub repository for Shazamify, a Spotify Clone that leverages a rich set of APIs to deliver a seamless and engaging music discovery experience. This project showcases the integration of various technologies to create an intuitive and responsive music-streaming web application.
 
 # System Design Flow Chart
+<<<<<<< HEAD
+=======
+
 ![Alt text](<Screenshot 2023-11-16 at 11.57.52 PM.png>)Shazamify Spotify Clone
 
 
